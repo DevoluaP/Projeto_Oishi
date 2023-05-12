@@ -1,0 +1,338 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f0f0f0;
+    animation: aparecer 2s;
+}
+
+header {
+    position: fixed;
+    width: 100vw;
+    height: 15vh;
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+header img {
+    position: static;
+    max-width: 60vw;
+    max-height: 69px;
+    margin-top: 2vh;
+}
+
+a {
+    text-decoration: none;
+}
+
+#container {
+    padding: 0 20px 0 20px;
+}
+
+#bt-menu, #bt-fechar {
+    width: 10vw;
+    height: 10vh;
+}
+
+#bt-fechar {
+    display: none;
+}
+
+.menu-principal {
+    position: fixed;
+    right: 0;
+    top: 15vh;
+    width: 50vw;
+    height: 100vh;
+    background-color: #dc0000;
+    display: none;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+}
+
+.menu-principal li {
+    list-style: none;
+}
+
+.menu-principal li a {
+    color: #f0f0f0;
+    font-size: 1.2em;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin-top: 12px;
+}
+
+#home-oishi {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: justify;
+    flex-direction: column;
+}
+
+#home-oishi img {
+    width: 100%;
+    min-height: 30vh;
+    border-radius: 20px;
+    margin-top: 17vh;
+}
+
+#home-oishi p {
+    width: auto;
+    height: auto;
+    padding: 0 20px 0 20px;
+    color: #090806;
+    font-size: 1.0em;
+    font-family: "Roboto Slab", serif;
+    margin-top: 5vh;
+}
+
+.link-reserva {
+    color: #DC0000;
+}
+
+.link-reserva:hover {
+    color: #090806;
+}
+
+iframe {
+    display: inline;
+    width: 90%;
+    height: 30vh;
+    border-radius: 20px;
+}
+
+form {
+    display: flex;
+    justify-content: center;
+    align-items: left;
+    flex-direction: column;
+    width: 80%;
+    margin-top: 4vh;
+    font-family: "Roboto Slab", serif;
+}
+
+.botoes-form {
+    display: flex;
+    justify-content: space-around;
+    align-items: left;
+    flex-direction: column;
+}
+
+.conhecer {
+    margin-top: 10vh;
+    font-size: 1.6em;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.painel-de-informacoes {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    margin-top: 4vh;
+}
+
+.painel-de-informacoes div svg{
+    margin-top: 4vh;
+    min-width: 50vw;
+    min-height: 30vh;
+}
+
+.painel-de-informacoes p {
+    color: #dc0000;
+    cursor: pointer;
+    font-size: 1.5em;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.fim-home {
+    width: 100%;
+    min-height: 30vh;
+    border-radius: 20px;
+    margin-top: 4vh;
+}
+
+footer h2 {
+    text-align: center;
+    color: #dc0000;
+    font-size: 0.8em;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin-bottom: 1vh;
+}
+
+footer h2 a {
+    color: #dc0000;
+}
+
+footer h2 a:hover {
+    color: #090806;
+}
+
+/* barra de scroll */
+*::-webkit-scrollbar {
+    width: 20px;
+    width: 20px;
+}
+
+*::-webkit-scrollbar-track {
+  border-radius: 0px;
+  background-color: #F0F0F0;
+}
+
+*::-webkit-scrollbar-track:active {
+  background-color: #F0F0F0;
+}
+
+*::-webkit-scrollbar-thumb {
+  border-radius: 20px;
+  background-color: #DC0000;
+}
+
+/* animação de boas vindas */
+@keyframes aparecer {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 100;
+    }
+}
+
+/* responsividade para Desktop */
+@media (min-width: 768px) {
+    #bt-menu, #bt-fechar {
+        display: none;
+    }
+
+    .menu-principal {
+        position: relative;
+        left: auto;
+        top: auto;
+        width: 70vw;
+        height: 15vh;
+        background-color: #f0f0f0;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .menu-principal li {
+        list-style: none;
+        font-size: 1.5em;
+    }
+
+    .menu-principal li a {
+        color: #dc0000;
+    }
+
+    .menu-principal li a:hover {
+        cursor: pointer;
+        box-shadow: 0 2px #090806;
+    }
+
+    .menu-principal li a:active, .menu-principal li a:hover, #home-oishi {
+        color: #090806;
+    }
+
+    #home-oishi img {
+        width: 80%;
+        height: 80vh;
+        min-height: 30vh;
+        border-radius: 20px;
+    }
+
+    #home-oishi p {
+        width: 83%;
+        height: auto;
+        padding: 0 20px 0 20px;
+        font-size: 1.3em;
+        font-family: "Roboto Slab", serif;
+        margin-top: 4vh;
+    }
+
+    .link-reserva:hover {
+        box-shadow: 0 2px #090806;
+    }
+
+    iframe {
+        display: inline;
+        width: 80%;
+    }
+
+    form {
+        display: flex;
+        justify-content: left;
+        align-items: left;
+        flex-direction: column;
+        width: 80%;
+        margin-top: 4vh;
+    }
+
+    .botoes-form {
+        display: flex;
+        justify-content: left;
+        flex-direction: row;
+    }
+
+    .botoes-form input {
+        margin-right: 1vw;
+        border-radius: 20px;
+        padding: 10px;
+        border: 2px solid #090806;
+    }
+
+    .botoes-form input:hover {
+        cursor: pointer;
+        border: 2px solid #DC0000;
+        box-shadow: 3px 3px #DC0000;
+    }
+
+    #home-oishi h2 {
+        margin-top: 16vh;
+    }
+
+    .painel-de-informacoes {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-direction: row;
+        text-align: center;
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .painel-de-informacoes div {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        flex-wrap: wrap;
+    }
+
+    .painel-de-informacoes div svg{
+        min-width: 100%;
+        min-height: 30vh;
+    }    
+
+    .fim-home {
+        width: 80%;
+        height: 80vh;
+        min-height: 30vh;
+        border-radius: 20px;
+        margin-top: 4vh;
+        margin-bottom: 1vh;
+        margin-left: 10%;
+    }
+}
