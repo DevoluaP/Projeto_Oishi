@@ -404,6 +404,7 @@ footer h2 a:hover {
     .painel-de-informacoes div svg{
         min-width: 100%;
         min-height: 30vh;
+        transition: 0.4s;
     }    
 
     .painel-de-informacoes div svg:hover {
